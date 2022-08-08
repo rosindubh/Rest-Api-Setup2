@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <main>
+        <div>
+            <a href="../index.html">Home</a>
+            <h1>Connection Page</h1>
+        </div>
+    <div>
+        <h2>First make sure NodeJs is installed, if not run the following in your root directory.</h2>
+        <p>curl fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+            sudo apt-get install -y node.js</p>
+        <p>Replacing the "x" with the current version of NodeJs</p>
+        <h3>Now follow these steps in order</h3>
+        <ol>
+            <li>In the Parent folder of your project run this :- npm init -y</li>
+            <h3>Now add these dependencies from the root folder of your project</h3>
+        <ul>
+            <li>npm i dotenv</li>
+            <li>npm i mongoose --save</li>
+        </ul>
+            <li>Then in the .gitignore file add these 2 items:</li>
+            <ul>
+                <li>/node_modules</li>
+                <li>.env</li>
+            </ul>
+            <li>Then add the connection to your MongoDb database in the .env file like this :- </li>
+            <p>API_URL = [connection URI goes here]</p>
+            <p>    Remember to edit the URI string to contain the correct username, password and cluster name.</p>
+            <li>In the connection.js file which is inside the db folder add the following code:</li>
+        </ol>
+        <pre>
+            const mongoose = require('mongoose');
+            require('dotenv').config();
+
+            const connection = async () => {
+                try {
+                        await mongoose.connect(process.env.API_URL)
+                        console.log('Successfully connected to MongoDb Database...');
+                    } catch (error) {
+                        console.log(error);
+                    }
+            }
+
+            connection();</pre>
+        <h3>YOU CAN NOW RUN THE connection.js FILE IN THE TERMINAL AND IT SHOULD SHOW THE FOLLOWING</h3>
+        <p>Successfully connected to Database... </p>
+        <p>If it does go on to create the server, if it doesn't check all previous steps. Click link below to continue.</p>
+        <a href="./server.html">Server</a>
+    </div>
+    </main>
+    <footer>ROSINDUBH &copy; 2022</footer>
+
+</body>
+</html>

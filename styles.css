@@ -1,0 +1,19 @@
+ul {
+    list-style: inside;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ol {
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+}

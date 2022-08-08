@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <main>
+        <div>
+            <a href="../index.html">Home</a>
+            <h1>Server Page</h1>
+        </div>
+        <div>
+            <p>First run npm install express in the parent folder of your project.</p>
+            <p>Then in the server.js file add the following code:</p>
+            <pre>
+
+                require("./db/connection");
+    
+                const express = require("express");
+                const app = express();
+                const router = require("./routes")
+        
+                app.use(express.json());
+                app.use(router)
+                
+                const port = process.env.PORT || 5000;
+        
+                app.listen(port, () => {
+                    console.log(`Server listening on port ${port}...`);
+                });
+
+
+
+
+
+                NOTE the first line starts the database connection
+                This is very important and is easily missed.
+
+                To specify a specific port for example 3000
+                run this is in the terminal
+                export PORT=3000
+            </pre>
+            <div>
+                <p>Now click link below to create the routes file</p>
+                <a href="./routes.html">Routes</a>
+            </div>
+        </div>
+    </main>
+    <footer>ROSINDUBH &copy; 2022</footer>
+
+</body>
+</html>
