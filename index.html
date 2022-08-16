@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rest API Setup</title>
+    <title>Layout</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,67 +20,57 @@
       <a href="./pages/put-user.html">PUT</a>
       <a href="#">DELETE</a>
     </nav>
+    <div class="heading">
+      <h1>REST API SET-UP INSTRUCTIONS</h1>
+    </div>
     <main class="main">
-      <div class="heading">
-        <h1>REST API SET-UP INSTRUCTIONS</h1>
-      </div>
-      <!-- BOX1 -->
       <div class="box1">
         <h2>Introduction</h2>
-        <pre>
-          This is a step by step guide to create a REST-API 
-with a connection to a MongoDb Database.
-        </pre>
+        <p class="content">
+          This is a step by step guide to create a REST-API with a connection to
+          a MongoDb Database.
+        </p>
         <h3>Subjects covered will include</h3>
-        <ul>
-          <li>Create a local server</li>
-          <li>Making a connection to a MongoDb</li>
-          <li>Writing and testing the controllers</li>
-          <li>Writing the Routes</li>
-          <li>Writing the Model</li>
-          <li>Test we have a full CRUD API</li>
-        </ul>
+        <p class="content">Create a local server</p>
+        <p class="content">Making a connection to a MongoDb</p>
+        <p class="content">Writing and testing the controllers</p>
+        <p class="content">Writing the Routes</p>
+        <p class="content">Writing the Model</p>
+        <p class="content">Test we have a full CRUD API</p>
       </div>
-      <!-- BOX2 -->
       <div class="box2">
-        <h2>First Step</h2>
-        <pre>
-          First step is to setup the folders and files reqired.
-        Make a Bash script called boilerplate.sh that looks
-        like this.
-        </pre>
-        <div>
-          <pre class="bash-script">
-
->.env
->.gitignore
-mkdir src
-mkdir src/controllers
-mkdir src/db
-mkdir src/middleware
-mkdir src/models
-mkdir src/routes
-mkdir src/user
->src/server.js
->src/controllers/index.js
->src/db/connection.js
->src/middleware/index.js
->src/models/index.js
->src/routes/index.js
->src/user/index.js
-
-
-Then execute the script to create 
-files and folders.
-        </pre>
-        </div>
+        <h2>First Steps</h2>
+        <p class="content">
+          First step is to setup the folders and files reqired. Make a Bash
+          script called boilerplate.sh that looks like this:
+        </p>
+        <br />
+        <p class="content">.env</p>
+        <p class="content">.gitignore</p>
+        <p class="content">mkdir src</p>
+        <p class="content">mkdir src/controllers</p>
+        <p class="content">mkdir src/db</p>
+        <p class="content">mkdir src/middleware</p>
+        <p class="content">mkdir src/models</p>
+        <p class="content">mkdir src/routes</p>
+        <p class="content">mkdir src/user</p>
+        <p class="content">>src/server.js</p>
+        <p class="content">>src/controllers/index.js</p>
+        <p class="content">>src/db/connection.js</p>
+        <p class="content">>src/middleware/index.js</p>
+        <p class="content">>src/models/index.js</p>
+        <p class="content">>src/routes/index.js</p>
+        <p class="content">>src/user/index.js</p>
+        <br /><br>
+        <p class="content">
+          Place this in the ROOT folder of your project.
+          Then execute the script to create the neccessary folders and files.
+        </p>
+        <footer class="footer">ROSINDUBH &copy; 2022</footer>
       </div>
-      <!-- BOX3 -->
       <div class="box3">
         <h2>File Structure</h2>
-
         <pre class="tree">
-
 
 └── src
 ├── controllers
@@ -96,17 +86,12 @@ files and folders.
 ├── server.js
 └── user
   └── index.js
-      </pre
-        >
-      </div>
-      <div class="instruction">
-        <p>
-          Now we can start to build the connection.js file - Click the RED link
-          below to continue.
-        </p>
+
+  <p class="instruction">Click link below to continue ...</p>
+        </pre>
         <a class="next-page" href="./pages/connection.html">Connection Page</a>
       </div>
     </main>
-    <footer class="footer">ROSINDUBH &copy; 2022</footer>
+    <!-- <footer class="footer">ROSINDUBH &copy; 2022</footer> -->
   </body>
 </html>
