@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET Request</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div>
+      <a href="../index.html">Home</a>
+      <h1>GET Request</h1>
+      <p>Here we will create a controller to get a list of all useres</p>
+    </div>
+    <div>
+      <pre>
+
+            IN THE controllers.js FILE ADD THE FOLLOWING CODE
+            AND TEST USING THIS IN THUNDER CLIENT
+            http://localhost:5000/listUsers
+        
+
+          //GET      /user/list
+          exports.listUsers = async (req, res) => {
+            try {
+                const list = await User.find({});
+                res.status(200).send({allUsers: list});
+            } catch (error) {
+                res.status(500).send({ err: error})
+            }
+        }
+        
+        </pre
+      >
+    </div>
+    <footer>ROSINDUBH &copy; 2022</footer>
+  </body>
+</html>

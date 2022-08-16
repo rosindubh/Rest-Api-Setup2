@@ -1,19 +1,93 @@
-ul {
-    list-style: inside;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1.2em;
+    background-color: #EEEEEE;
+}
+.navbar {
+    /* background-color: aquamarine; */
+    height: 2.6em;
+    border-bottom: 1px solid black;
+}
+a {
+    background-color: rgba(174, 185, 185, 0.315);
+}
+.navbar, a {
+    padding: 7px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(26, 26, 116);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    border-radius: 10px;
+}
+.main {
+    min-width: 900px;
+}
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    text-align: center;
+}
+h2, h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.box1 {
+    /* background-color: lightpink; */
+    float: left;
+}
+li {
+    text-align: left;
+    padding-left: 110px;
+}
+.box2 {
+    /* background-color: lightgreen; */
+    float: left;
+}
+.box2 .bash-script {
+    text-align: left;
+    padding-left: 110px;
+    /* background-color: cyan; */
+}
+.box3 {
+    /* background-color: chocolate; */
+    float: left;
+}
+.box3 .tree {
+    text-align: left;
+    padding-left: 110px;
+    /* background-color: violet; */
+}
+.next-page {
+    color: red;
+    width: 200px;
+    margin: 0 auto;
+}
+.box1, .box2, .box3 {
+    width: 33%;
+    height: 75vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    /* background-color:chartreuse; */
+}
+.instruction {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+    height: 10vh;
+    padding-top: 20px;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-ol {
-    margin: 0;
-}
-
-pre {
-    margin: 0;
-}

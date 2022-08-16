@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div>
+      <a href="../index.html">Home</a>
+      <h1>Model Page</h1>
+    </div>
+    <div>
+      <p>WE NOW NEED TO CREATE A MODEL FOR ADDING USERS TO THE DATABASE</p>
+      <p>In the model.html file add the following code:</p>
+      <pre>
+
+            const mongoose = require("mongoose");
+
+            const userSchema = mongoose.Schema({
+                name: {
+                    type: String,
+                    required: true,
+                    unique: true,
+                },
+                email: {
+                    type: String,
+                    required: true,
+                    unique: true,
+                },
+                password: {
+                    type: String,
+                    required: true
+                }
+            })
+            
+            const User = mongoose.model("User", userSchema);
+            
+            module.exports = User;
+
+
+
+
+            THIS IS THE SCHEMA FOR A USER. IT CONTAINS A NAME, AN EMAIL AND A PASSWORD.
+            NOW WE WILL CREATE A CONTOLLER TO ADD A USER ONTO THE MONGODB DATABASE
+
+        </pre
+      >
+      <p>Click the link below to continue</p>
+      <a href="./post-user.html">Post User</a>
+    </div>
+    <footer>ROSINDUBH &copy; 2022</footer>
+  </body>
+</html>

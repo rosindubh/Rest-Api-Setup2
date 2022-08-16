@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <a href="#" id="home">Home</a>
+    <nav class="navbar">
+      <a href="/">Home</a>
       <a href="./pages/connection.html">Connection</a>
       <a href="./pages/server.html">Server</a>
-      <a href="./pages/controllers.html">Controllers</a>
       <a href="./pages/routes.html">Routes</a>
+      <a href="./pages/controllers.html">Controllers</a>
       <a href="./pages/model.html">Model</a>
-      <a href="#">GET</a>
       <a href="./pages/post-user.html">POST</a>
+      <a href="./pages/list-users.html">GET</a>
       <a href="./pages/put-user.html">PUT</a>
       <a href="#">DELETE</a>
     </nav>
-    <main>
+    <main class="main">
       <div class="heading">
         <h1>REST API SET-UP INSTRUCTIONS</h1>
       </div>
-      <div class="introduction">
+      <!-- BOX1 -->
+      <div class="box1">
         <h2>Introduction</h2>
-        <p>
-          This is a step by step guide to create a REST-API with a connection to
-          a MongoDb Database.
-        </p>
+        <pre>
+          This is a step by step guide to create a REST-API 
+with a connection to a MongoDb Database.
+        </pre>
         <h3>Subjects covered will include</h3>
         <ul>
           <li>Create a local server</li>
@@ -40,13 +41,14 @@
           <li>Test we have a full CRUD API</li>
         </ul>
       </div>
-      <div class="first-step">
+      <!-- BOX2 -->
+      <div class="box2">
         <h2>First Step</h2>
-        <p>First step is to setup the folders and files reqired.</p>
-        <p>
-          Make a Bash script called boilerplate.sh that looks like this and run
-          it in your Parent folder:
-        </p>
+        <pre>
+          First step is to setup the folders and files reqired.
+        Make a Bash script called boilerplate.sh that looks
+        like this.
+        </pre>
         <div>
           <pre class="bash-script">
 
@@ -66,16 +68,20 @@ mkdir src/user
 >src/models/index.js
 >src/routes/index.js
 >src/user/index.js
+
+
+Then execute the script to create 
+files and folders.
         </pre>
         </div>
-        <div>
-          <p>
-            You should now have all the files and folders in a tree like this.
-          </p>
-        </div>
-        <div>
-            <pre class="files-folders">
-            
+      </div>
+      <!-- BOX3 -->
+      <div class="box3">
+        <h2>File Structure</h2>
+
+        <pre class="tree">
+
+
 └── src
 ├── controllers
 │   └── index.js
@@ -89,15 +95,18 @@ mkdir src/user
 │   └── index.js
 ├── server.js
 └── user
-    └── index.js
-                
-            </pre>
-        </div>
-        <div><p>Now we can start to build the connection.js file - Click the link below to continue.</p>
-            <a href="./pages/connection.html">Connection Page</a>
-        </div>
+  └── index.js
+      </pre
+        >
+      </div>
+      <div class="instruction">
+        <p>
+          Now we can start to build the connection.js file - Click the RED link
+          below to continue.
+        </p>
+        <a class="next-page" href="./pages/connection.html">Connection Page</a>
       </div>
     </main>
-    <footer>ROSINDUBH &copy; 2022</footer>
+    <footer class="footer">ROSINDUBH &copy; 2022</footer>
   </body>
 </html>

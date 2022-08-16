@@ -12,6 +12,32 @@
         <h1>Routes Page</h1>
     </div>
     <div>
+        <p>In routes folder edit the index.js file to look loke this:</p>
+        <pre>
+
+        const {Router} = require("express");
+        const router = Router();
+        const {testGet} = require("../controllers")
+
+        router.get("/testGet", testGet);
+
+        module.exports = router;
+        
+
+
+
+        Here we have called the router router
+        You can call it by any name you choose
+
+        We have also created a route to testGet  
+        and imported it. This function doesn't exist
+        yet, we are going to create it now.
+        </pre>
+        <h3>NEXT CREATE THE controllers.js FILE</h3>
+        <p>Click the link below to continue</p>
+        <a href="./controllers.html">Controllers</a>
+    </div>
+    <div>
         <footer>ROSINDUBH &copy; 2022</footer>
     </div>
 </body>
